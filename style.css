@@ -48,7 +48,7 @@ border-radius: 16px;
     display: flex;
     border-bottom: 1px solid #DEE2E6;
 }
-.tasks {
+.input_task {
     width: 356px;
  height: 38px;
    border: 1px solid #ced4da;
@@ -86,6 +86,10 @@ label {
     background-color: white;
    display: flex;
 }
+.box_task_done{
+text-decoration: line-through;
+opacity: 0.5;
+}
 
 .cross {
 margin-right: 24px;
@@ -94,7 +98,8 @@ margin-right: 24px;
     size: 16px;
 }
 
-.footer {
+.box_delete {
+    display: none;
     background-color: #F5F5F5;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
