@@ -1,3 +1,4 @@
+//первый вариант без LS
 // const input = document.querySelector('.input_task');
 const btnAdd = document.querySelector('.add');
 const btnDelCom = document.querySelector('.delete_completed');
