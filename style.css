@@ -68,6 +68,7 @@ border-radius: 16px;
 
 .check {
     margin: 0 16px 0px 24px;
+    accent-color: #7749F8;
 }
 
 label {
@@ -76,9 +77,10 @@ label {
 
 
 .list {
-    display: grid;
+    display: none;
     gap: 26px;
     padding: 32px 0 32px 0;
+    
 }
 
 
@@ -92,10 +94,15 @@ opacity: 0.5;
 }
 
 .cross {
-margin-right: 24px;
+    margin-right: 24px;
     margin-left: auto;
     background-color: white;
     size: 16px;
+}
+
+img {
+pointer-events: none;
+display: block;
 }
 
 .box_delete {
