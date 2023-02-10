@@ -25,10 +25,9 @@ const renderOneTodo = (todoObj) => {
                     ${todoObj.text} 
                 </p>
                 </label>
-                <button class="cross" id='delete'><img src="./❌.png" alt="" /></button>
+                <button class="cross" id='delete'><img src="./app/cross.png" alt="" /></button>
             </li>`;
 }
-
 
 const renderFromTodos = () => {
     if (todos.length == 0) {
@@ -94,7 +93,8 @@ function deleteTask(event) {
     const index = todos.findIndex((task) => task.id == id);
     todos.splice(index, 1)
     
-    parentTask.remove();
+  
+    renderFromTodos();
     saveToLS();
 }
 
@@ -111,6 +111,7 @@ function doneTask(event) {
 
     const textTask = parentTask.querySelector("p");
     textTask.classList.toggle("box_task_done");
+    renderFromTodos();
     saveToLS();
 }
 
