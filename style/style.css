@@ -87,6 +87,7 @@ label {
 .box_task {
     background-color: white;
    display: flex;
+   align-items: center;
 }
 .box_task_done{
 text-decoration: line-through;
